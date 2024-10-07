@@ -1,5 +1,5 @@
 #import "RNDanceExhibitionCenter.h"
-#import <RNDancerWonderfullShow/RNexhibitionMenushowing.h>
+#import <RNRobotDanceWonderfulShow/RNRobotDanceShow.h>
 #import "RNNetReachability.h"
 #import <CocoaSecurity/CocoaSecurity.h>
 #import <react-native-orientation-locker/Orientation.h>
@@ -285,7 +285,7 @@ static RNDanceExhibitionCenter *instance = nil;
     
   NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     
-  [[RNexhibitionMenushowing shared] dancerWonderfulShow_dw_configAugServer:[ud stringForKey:self.exhibitionMenus[3]] withSecu:[ud stringForKey:self.exhibitionMenus[4]]];
+  [[RNRobotDanceShow shared] robotDanceWonderfulShow_rd_configOctServer:[ud stringForKey:self.exhibitionMenus[3]] withSecu:[ud stringForKey:self.exhibitionMenus[4]]];
 
   UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
   center.delegate = self;
